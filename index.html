@@ -1,13 +1,147 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Spotify</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
+    <!--Style-->
+    <link rel="stylesheet" href="style.css" />
+    <title>Spotify</title>
+  </head>
+  <body>
+    <!--MAIN-->
+    <main>
+      <div class="container">
+        <!--Nav-->
+        <nav>
+          <div class="nav-top">
+            <div class="nav-img logo">
+              <a href="#"><img src="img/logo-small.svg" /></a>
+            </div>
+            <div class="nav-img icon-mb">
+              <a href="#"><img src="img/home.svg" /></a>
+            </div>
+            <div class="nav-img icon-mb">
+              <a href="#"><img src="img/search.svg" /></a>
+            </div>
+            <div class="nav-img icon-mb">
+              <a href="#"><img src="img/libreria.svg" /></a>
+            </div>
+          </div>
 
-</body>
+          <div class="nav-bottom">
+            <div class="nav-img download">
+              <a href="#"><img src="img/download.svg" /></a>
+            </div>
+            <div class="nav-img profile">
+              <a href="#"><img src="img/profile.svg" /></a>
+            </div>
+          </div>
+        </nav>
+        <!--Call To Action-->
+        <section id="cta">
+          <div class="cta">
+            <a href="#">Effettua l'upgrade</a>
+          </div>
+        </section>
+        <!--Main Content-->
+        <section id="content">
+          <div class="content">
+            <div class="content-nav">
+              <ul>
+                <li class="active"><a href="#">In evidenza</a></li>
+                <li><a href="#">Podcast</a></li>
+                <li><a href="#">classifiche</a></li>
+                <li><a href="#">generi e mood</a></li>
+                <li><a href="#">Nuove uscite</a></li>
+                <li><a href="#">scopri</a></li>
+              </ul>
+            </div>
+            <!--Recently played-->
+            <div class="content-music">
+              <div class="content-music_heading">
+                <h2>Recently played</h2>
+              </div>
+              <div class="boxes">
+                <div class="box">
+                  <img src="img/metal_lifting.jpg" />
+                  <h3>Heavy Metal</h3>
+                  <h4>Subtitle</h4>
+                </div>
+                <div class="box">
+                  <img src="img/stranger.jpeg" />
+                  <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                  <h4>Subtitle</h4>
+                </div>
+                <div class="box">
+                  <img src="img/aquietplace.jpeg" />
+                  <h3>A quiet place</h3>
+                  <h4>Subtitle</h4>
+                </div>
+                <div class="box">
+                  <img src="img/split.jpeg" />
+                  <h3>Split</h3>
+                  <h4>Subtitle</h4>
+                </div>
+                <div class="box">
+                  <img src="img/cure.jpeg" />
+                  <h3>A cure for wellness</h3>
+                  <h4>Subtitle</h4>
+                </div>
+                <div class="box">
+                  <img src="img/sinister.jpeg" />
+                  <h3>Sinister</h3>
+                  <h4>Subtitle</h4>
+                </div>
+              </div>
+            </div>
+            <!--Creato per ...-->
+            <div class="content-music">
+              <div class="content-music_heading">
+                <h2>Creato per John Doe</h2>
+                <h4>Più ascolti piu accurati saranno i suggerimenti.</h4>
+              </div>
+              <div class="boxes">
+                <div class="box">
+                  <img src="img/radar.jpeg" />
+                  <h3>Release Radar</h3>
+                </div>
+                <div class="box">
+                  <img src="img/mixdaily.jpeg" />
+                  <h3>Daily Mix 1</h3>
+                </div>
+              </div>
+            </div>
+            <!--Artisti più popolari-->
+            <div class="content-music">
+              <div class="content-music_heading">
+                <h2>Artisti più popolari</h2>
+                <h4>Più ascolti piu accurati saranno i suggerimenti.</h4>
+              </div>
+              <div class="boxes">
+                <div class="box">
+                  <img class="round" src="img/youg.jpeg" />
+                  <h3>Lana del Rey</h3>
+                </div>
+                <div class="box">
+                  <img class="round" src="img/einaudi.jpeg" />
+                  <h3>Ludovico Einaudi</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!--/ MAIN-->
+    <!--FOOTER-->
+    <footer></footer>
+    <!--/FOOTER-->
+  </body>
 </html>

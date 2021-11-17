@@ -1,6 +1,205 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  background-color: #141922;
+  font-size: 12px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h4 {
+  color: #727479;
+}
+
+/******************
+    MAIN
+******************/
+.container {
+  display: flex;
+}
+
+/***SIDE NAVIGATION***/
+nav {
+  height: 100vh;
+  z-index: 3;
+  width: 10%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 80px;
+}
+
+.nav-top,
+.nav-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-top {
+  padding-top: 5px;
+}
+
+.nav-bottom {
+padding-bottom: 5px;
+}
+
+.nav-img img {
+  width: 25px;
+  height: 25px;
+  opacity: .8;
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.profile img {
+  background-color: #727479;
+  border-radius: 50%;
+}
+
+.download img{
+  width: 15px;
+  height: 15px;
+  margin-bottom: 15px;
+}
+
+.icon-mb {
+  margin-bottom: 5px;
+}
+/***CTA***/
+#cta {
+  background-color: rgba(0, 0, 0, 0.4);
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.cta {
+  margin-right: 5px;
+}
+
+.cta a {
+  padding: 12px 35px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/***CONTENT NAV***/
+.content-nav {
+  margin: 20px 0px;
+}
+.content-nav ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.content-nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px 10px;
+}
+
+.content-nav a {
+  text-transform: uppercase;
+  color: #727479;
+  font-weight: bold;
+}
+
+.active {
+  position: relative;
+}
+
+.active:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -5px;
+  height: 1px;
+  width: 35%; /* or 100px */
+  border-bottom: 2px solid #9feb2e;
+}
+
+/***CONTENT MUSIC***/
+#content {
+  padding-top: 100px;
+  width: 90%;
+  height: 100vh;
+  overflow: scroll;
+}
+.content {
+  padding: 0px 20px;
+}
+
+.content-music_heading {
+  margin: 40px 0px 30px 0px;
+}
+
+.content-music_heading h2 {
+  font-size: 25px;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 10px;
+}
+
+.box {
+  text-align: center;
+}
+
+.box h3 {
+  margin: 10px 0px 5px 0px;
+}
+
+.box,
+.box img  {
+  width: 220px;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+/******************
+    FOOTER
+******************/
+footer {
+  height: 80px;
+  width: 100%;
+  background-color: #282828;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
