@@ -134,7 +134,7 @@ nav.nav-small {
 
 .cta {
   margin-right: 20px;
-  transition: all 0.2s;
+  transition: all .3s;
 }
 
 .cta a {
@@ -229,7 +229,7 @@ nav.nav-small {
 
 .box,
 .box img {
-  width: 80%;
+  width: 270px;
 }
 
 .round {
@@ -254,7 +254,7 @@ nav.nav-small {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  animation: play-btn 3s linear infinite;
 }
 
 .overlay {
@@ -520,6 +520,11 @@ footer {
     width: 100%;
   }
 
+  .logo img {
+    width: 35px;
+    height: 35px;
+  }
+
   .nav-large .nav-img {
     padding-left: 15px;
   }
@@ -590,6 +595,11 @@ footer {
   .footer-content-center i {
     font-size: 18px;
   }
+
+  .footer-brano-icon a {
+    display: inline-block;
+    margin: 0px 8px;
+  }
 }
 
 /******************
@@ -604,5 +614,34 @@ footer {
   .box {
     width: 20%;
     max-width: 250px;
+  }
+}
+
+/******************
+HIDE CALL TO ACTION
+******************/
+@media screen and (max-height: 350px) {
+  #cta {
+    display: none;
+  }
+}
+/******************
+  ANIMATIONS
+******************/
+@keyframes play-btn {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  25% {
+    transform: translate(-50%, -50%)  scale(1.1);
+  }
+  50% {
+    transform: translate(-50%, -50%)  scale(1);
+  }
+  75% {
+    transform: translate(-50%, -50%)  scale(1.1);
+  }
+  100% {
+    transform: translate(-50%, -50%)  scale(1);
   }
 }
