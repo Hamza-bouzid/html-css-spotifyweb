@@ -77,7 +77,7 @@ nav.nav-small {
 }
 
 .home img,
-.nav-img:hover img{
+.nav-img:hover img {
   opacity: 1;
 }
 
@@ -134,7 +134,7 @@ nav.nav-small {
 
 .cta {
   margin-right: 20px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .cta a {
@@ -229,7 +229,7 @@ nav.nav-small {
 
 .box,
 .box img {
-  width: 220px;
+  width: 80%;
 }
 
 .round {
@@ -237,11 +237,11 @@ nav.nav-small {
 }
 
 .box:hover .overlay-container i {
-display: block;
+  display: block;
 }
 
 .box:hover .overlay {
-display: block;
+  display: block;
 }
 
 .overlay-container {
@@ -338,7 +338,7 @@ footer {
 .footer-content-center .icon-margin {
   font-size: 25px;
   margin: 0px 10px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .footer-content-center .icon-margin:hover {
@@ -429,16 +429,10 @@ footer {
   background-color: #9feb2e;
 }
 
-
-
-
 /******************
-    MEDIA QUERIE XS
+    MEDIA QUERIE S
 ******************/
-
 @media screen and (min-width: 550px) {
-  /***SIDE NAVIGATION***/
-  /***CONTENT NAV***/
   /***CONTENT MUSIC***/
   .content-music_heading {
     text-align: left;
@@ -447,9 +441,15 @@ footer {
   .boxes {
     justify-content: flex-start;
   }
-  /******************
-    FOOTER
-******************/
+
+  .box {
+    width: 48%;
+  }
+
+  .box img {
+    width: 100%;
+  }
+   /***FOOTER**/
   .footer-content-left {
     width: 300px;
     padding-left: 5px;
@@ -479,7 +479,7 @@ footer {
 }
 
 /******************
-    MEDIA QUERIE S
+    MEDIA QUERIE M
 ******************/
 @media screen and (min-width: 768px) {
   body {
@@ -526,7 +526,7 @@ footer {
 
   .playlist {
     padding-left: 15px;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   .playlist a:hover {
@@ -535,10 +535,6 @@ footer {
 
   .playlist h3 {
     text-transform: uppercase;
-  }
-
-  .playlist ul {
-    height: 10px;
   }
 
   .playlist ul li {
@@ -551,7 +547,7 @@ footer {
     margin: 15px 0px;
   }
 
-  .new-playlist:hover i{
+  .new-playlist:hover i {
     background-color: #fff;
   }
 
@@ -571,11 +567,12 @@ footer {
   .profile a {
     color: #fff;
   }
-  /***CONTENT NAV***/
   /***CONTENT MUSIC***/
-  /******************
-  FOOTER
-******************/
+  .box {
+    width: 31%;
+  }
+  
+  /***FOOTER**/
   .footer-brano-img img {
     width: 40px;
     height: 40px;
@@ -592,5 +589,20 @@ footer {
 
   .footer-content-center i {
     font-size: 18px;
+  }
+}
+
+/******************
+    MEDIA QUERIE L
+******************/
+@media screen and (min-width: 992px) {
+  .boxes {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .box {
+    width: 20%;
+    max-width: 250px;
   }
 }
